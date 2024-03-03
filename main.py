@@ -10,7 +10,6 @@ class MyServer(BaseHTTPRequestHandler):
         обработку входящих запросов от клиентов.
     """
 
-    # @property
     @staticmethod
     def get_content():
         """Метод, возвращающий html-код страницы."""
@@ -36,6 +35,5 @@ if __name__ == "__main__":
         webServer.serve_forever()
     except KeyboardInterrupt:
         pass
-
     webServer.server_close()
     print("Server stopped.")
